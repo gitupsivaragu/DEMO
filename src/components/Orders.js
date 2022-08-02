@@ -4,7 +4,7 @@ const Orders = () => {
 return (
       <>
         <h1 style={{color:"green"}}> 
-            Welcome to GeeksForGeeks</h1>
+            Welcome to Orders</h1>
       </>
   )
 };

@@ -107,7 +107,7 @@ return <>
 {this.JuiceItems.map((Ite)=>{
   return(
     <>
-<div style={center}>
+<div   style={center}>
    <div style={w3Quarter1} >
      <div  style={detailimg}>
      
@@ -122,7 +122,9 @@ return <>
        {this.ItemrequireornotRequire(Ite.NotRequire)}
      
        <span  style={{paddingLeft:"200px", fontWeight: "bold",fontSize: "larger",  color: "green"}} >Price:- {Ite.Price}$ </span>  
-       <input type="button" value="ADD+" /> 
+       <input type="button"  style={{fontWeight:  "bold",
+backgroundColor: "gold",
+boxShadow: "2px 2px 2px"}} value="ADD+" /> 
       </div>
      </div>
     </div>
@@ -143,7 +145,7 @@ ItemrequireornotRequire(Ite)
 fontSize: "larger",
 padding: "5px"
   }
-debugger;
+
      return(
        <>
        <label  style={lablelAlign}>{Ite.Item1}</label>
@@ -157,7 +159,15 @@ debugger;
 CallingItems(e)
 {
 debugger;
+if(this.state.Itemid=="1")
+{
+  this.setState({Itemid:"0"});
+
+}
+else
+{
 this.setState({Itemid:e.target.id});
+}
 this.RenderElement();
 e.preventDefault();
 }
@@ -165,6 +175,7 @@ e.preventDefault();
 
   RenderElement()
  {
+debugger;
 
  
   const w3Quarter={
@@ -180,7 +191,7 @@ e.preventDefault();
 </div>
   ) }) }
     
-     {this.state.Itemid==="0" || this.state.Itemid===undefined?<span className="sr-only">Loading... Registered Devices</span>: this.elements()}
+     {this.state.Itemid==="0" || this.state.Itemid===undefined?<span className="sr-only">Click on Fresh Menu... </span>: this.elements()}
     
   </>
  };

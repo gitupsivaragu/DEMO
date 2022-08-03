@@ -74,9 +74,9 @@ const footer= {
             </h2>
             <h3 className="split right">           
             <div  style={{ margin: '10px',textDecoration: "none",textAlign: "right" }}>
-                        <span style={ headerpadding} title={this.state.Home} onClick={this.Routerlinkpage }>Home</span>
-                        <span style={ headerpadding} title={this.state.Contact} onClick={this.Routerlinkpage }>Contact's</span>  
-                        <span style={ headerpadding} title={this.state.Orders} onClick={this.Routerlinkpage }>Orders</span>                    
+                        <span className="btn" style={ headerpadding} title={this.state.Home} onClick={this.Routerlinkpage }>Home</span>
+                        <span className="btn" style={ headerpadding} title={this.state.Contact} onClick={this.Routerlinkpage }>Contact's</span>  
+                        <span className="btn" style={ headerpadding} title={this.state.Orders} onClick={this.Routerlinkpage }>Orders</span>                    
             </div>
            </h3>
         </header>

@@ -4,8 +4,10 @@ import Home  from './components/Home.js'
 import Contact  from './components/Contact.js'
 import Orders  from './components/Orders.js'
 import './App.css';
-import { Component } from 'react';
+import React ,{ Component } from 'react';
 
+import { UserProvider } from "./components/UserContext.js";
+React.createContext(true);
 class App extends Component{
 
 
@@ -94,3 +96,4 @@ const footer= {
 }
 
 export default App;
+
